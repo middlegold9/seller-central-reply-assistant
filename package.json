@@ -1,0 +1,31 @@
+{
+  "name": "seller-central-reply-assistant",
+  "version": "0.1.0",
+  "description": "Seller Central 买家消息 AI 回复助手 Chrome 插件（Plasmo MV3）",
+  "manifest": {
+    "host_permissions": [
+      "https://*.sellercentral.amazon.com/*",
+      "https://*.sellercentral.amazon.co.uk/*",
+      "https://*.sellercentral.amazon.co.jp/*"
+    ],
+    "permissions": ["storage"]
+  },
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "jsdom": "^24.0.0",
+    "plasmo": "^0.85.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}
